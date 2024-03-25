@@ -1,24 +1,7 @@
-<h1 class="center"> je suis le template </h1>
-
-<div class="container">
-    <div class="row">
-        <div *ngFor="let pokem of pokemenList" class="col m4 s6">
-            <div class="card horizontal" pkmBorderCard>
-                <div class="card-image">
-                    <img [src]="pokem.picture" alt="image de pokemon">
-                </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <p>{{pokem.name}}</p>
-                        <p><small>{{pokem.created}}</small></p>
-                    </div>
-                </div>
-            </div>
-            
-        
-        </div>
+<nav>
+    <div class="nav-wrapper teal">
+        <a href="#" class="brand-logo center" > pokemon </a>
     </div>
-</div>
+</nav>
 
-
-
+<router-outlet></router-outlet>  
